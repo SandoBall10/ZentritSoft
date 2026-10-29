@@ -1,0 +1,29 @@
+---
+const techs = ["React", "Next.js", "Astro", "TypeScript", "Node.js", "Python", "PostgreSQL", "MongoDB", "Tailwind", "Docker", "Firebase", "GraphQL", "React Native", "Framer Motion"];
+---
+
+<section id="tecnologias" class="swiss-section bg-black text-white overflow-hidden">
+  <div class="absolute inset-0 opacity-10 halftone pointer-events-none"></div>
+  <div class="swiss-container relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-y-10 mb-14">
+      <div class="lg:col-span-8 fade-up">
+        <span class="zine-label !bg-zt-primary">05 / Tech index / 技術</span>
+        <h2 class="swiss-heading mt-6">Herramientas para construir, <span class="text-zt-mint">no para presumir.</span></h2>
+      </div>
+      <p class="lg:col-span-4 lg:self-end text-white/65 leading-relaxed border-l-2 border-white pl-4">Seleccionamos el stack por contexto, mantenimiento y capacidad de crecimiento.</p>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 border-t-2 border-l-2 border-white fade-up">
+      {techs.map((tech, index) => (
+        <div class="aspect-square border-r-2 border-b-2 border-white p-3 md:p-4 flex flex-col justify-between hover:bg-zt-primary transition-colors">
+          <span class="font-display text-2xl md:text-3xl">{String(index + 1).padStart(2, "0")}</span>
+          <div>
+            <span class="block h-1 bg-white mb-2" style={{ width: index % 2 === 0 ? "70%" : "42%" }}></span>
+            <strong class="font-mono text-[10px] md:text-xs uppercase tracking-tight break-words">{tech}</strong>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
