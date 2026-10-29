@@ -1,0 +1,30 @@
+---
+import ProjectImageAlternator from "./ProjectImageAlternator.jsx";
+---
+
+<section id="proyectos" class="swiss-section bg-[#e9e8d8] overflow-hidden">
+  <div class="swiss-container">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8 fade-up">
+      <div>
+        <span class="zine-label">02 / Archive</span>
+        <h2 class="swiss-heading mt-4 !max-w-[14ch]">
+          Proyectos que <span class="swiss-accent">hacen el trabajo.</span>
+        </h2>
+      </div>
+
+      <div class="flex flex-col sm:flex-row sm:items-end gap-4">
+        <p class="max-w-sm border-l-4 border-black pl-3 text-sm md:text-base font-medium leading-snug">
+          Sistemas creados para finanzas, comercio, logística, transporte y operación empresarial.
+        </p>
+        <a href="/proyectos/" class="swiss-button swiss-button--secondary shrink-0">
+          <span>Ver todos</span>
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="fade-up">
+      <ProjectImageAlternator client:visible />
+    </div>
+  </div>
+</section>
